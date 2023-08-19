@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s linear;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+  .box{
+    height: 200px;
+    width: 400px;
+    background: #2c3e50;
+    border-radius: 10px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px #000700;
+  }
+  .box .image{
+    width: 134%;
+  
+    object-fit: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0,80% 0,100% 15%,100% 85%,76% 100%,0 100%);
+    background-color: rgb(18, 18, 66);
+  }
+  .box .image img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px coral;
+  }
+  .box .content {
+    width: 88%;
+    height: 100%;
+    display: flex;
+    padding: 0 9px;
+    align-items: center;
+    margin-left: 34px;
+  }
+  .box .content .icons {
+    background-color: #fff;
+    padding: 16px 7px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-flow: column;
+   
+
+  }
+  .box .content .icons img{
+    height: 15px;
+    width: 15px;
+    margin: 5px 0px;
+  }
+  .box .content .icons :first-child{
+
+    margin-bottom: 41px;
+    margin-top: -10px;
+
+}
+  
+  .box .content .info{
+    padding: 0 10px;
+  }
+  .box .content .info .title{
+    font-size: 18px;
+    color: #fff;
+     margin-top: -8px;
+  }
+  .box .content .info .title span{
+    color: coral;
+  }
+  .box .content .info .post{
+    color: #ccc;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 23px;
+  }
+  .box .content .info a{
+         display: block;
+         padding: 3px 0;
+         margin: 2px 0;
+         color: #fff;
+         font-size: 15px;
+  }
+  .box .share{
+    background: #fff;
+    margin-left: auto;
+    height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  }
+  .box .share a{
+    padding: 5px 7px;
+    border-radius: 50%;
+
+  }
+  .box .share a:hover{
+    background-color: coral;
+  }
+  .box .share img{
+    height: 19px;
+    width: 19px; 
+  }
+</style>
+<body>
+  <div class="box">
+ <table border="0" style=" height: 100%;width: 100%; border-spacing: 0;">
+  <tr>
+    <td>
+      <div class="image">
+        <img src="./WhatsApp Image 2023-07-24 at 20.04.05.jpg" alt="My Photo" title="My Photo">
+      </div>
+    </td>
+   <td>
+    <div class="content">
+      <div class="icons">
+         <img src="./user.png" alt="">
+         <img src="./call.png" alt="">
+         <img src="./global.png" alt="">
+         <img src="./envelope.png" alt="">
+      </div>
+      <div class="info">
+         <h3 class="title">Malik <span>Bilal</span></h3>
+         <span class="post">Web Developer</span>
+      
+        <a href="#">+923156531031</a>
+        <a href="#">www.dummydata.com</a>
+        <a href="#">malikbilalbf7@gmail.com</a>
+      
+      </div>
+    </div>
+   </td>
+   <td>
+    <div class="share">
+      <a href=""><img src="./facebook-app-symbol.png" alt="facebook" title="facebook"></a>
+      <a href=""><img src="./twitter.png" alt="twitter" title="twitter"></a>
+      <a href=""><img src="./instagram.png" alt="instagram" title="instagram"></a>
+      <a href=""><img src="./github.png" alt="github" title="github"></a>
+</div>
+   </td>
+  </tr>
+ </table>
+  </div>
+</body>
+</html>
